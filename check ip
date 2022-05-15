@@ -1,0 +1,4 @@
+import os
+ip_cmd = os.popen('hostname -I').read()
+ip = ip_cmd.split(" ")[0]
+print(ip)
